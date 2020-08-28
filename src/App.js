@@ -18,9 +18,9 @@ function CustomCOGOption({ suggestion }) {
 }
 
 async function fetchCommunes() {
-  const communes = await fetch("/communes-2019.json").then((data) =>
-    data.json()
-  );
+  const communes = await fetch(
+    "/test-idb-suggester/communes-2019.json"
+  ).then((data) => data.json());
   return communes.map(function (commune, i) {
     const { com } = commune;
     return { ...commune, id: `COM-${i}-${com}` };
