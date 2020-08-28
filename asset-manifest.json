@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.1b7b9f6f.chunk.css",
-    "main.js": "/static/js/main.a768ca3b.chunk.js",
-    "main.js.map": "/static/js/main.a768ca3b.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.9bf21d43.js",
-    "runtime-main.js.map": "/static/js/runtime-main.9bf21d43.js.map",
-    "static/js/2.4959968d.chunk.js": "/static/js/2.4959968d.chunk.js",
-    "static/js/2.4959968d.chunk.js.map": "/static/js/2.4959968d.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.f5dfec846fe07debfee9fb4588b85573.js": "/precache-manifest.f5dfec846fe07debfee9fb4588b85573.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.1b7b9f6f.chunk.css.map": "/static/css/main.1b7b9f6f.chunk.css.map",
-    "static/js/2.4959968d.chunk.js.LICENSE.txt": "/static/js/2.4959968d.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg"
+    "main.css": "/test-idb-suggester/static/css/main.1b7b9f6f.chunk.css",
+    "main.js": "/test-idb-suggester/static/js/main.cda0388f.chunk.js",
+    "main.js.map": "/test-idb-suggester/static/js/main.cda0388f.chunk.js.map",
+    "runtime-main.js": "/test-idb-suggester/static/js/runtime-main.46e8dd7b.js",
+    "runtime-main.js.map": "/test-idb-suggester/static/js/runtime-main.46e8dd7b.js.map",
+    "static/js/2.4959968d.chunk.js": "/test-idb-suggester/static/js/2.4959968d.chunk.js",
+    "static/js/2.4959968d.chunk.js.map": "/test-idb-suggester/static/js/2.4959968d.chunk.js.map",
+    "index.html": "/test-idb-suggester/index.html",
+    "precache-manifest.690058de54866b00a9a0faeeefbc4ca2.js": "/test-idb-suggester/precache-manifest.690058de54866b00a9a0faeeefbc4ca2.js",
+    "service-worker.js": "/test-idb-suggester/service-worker.js",
+    "static/css/main.1b7b9f6f.chunk.css.map": "/test-idb-suggester/static/css/main.1b7b9f6f.chunk.css.map",
+    "static/js/2.4959968d.chunk.js.LICENSE.txt": "/test-idb-suggester/static/js/2.4959968d.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/test-idb-suggester/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.9bf21d43.js",
+    "static/js/runtime-main.46e8dd7b.js",
     "static/js/2.4959968d.chunk.js",
     "static/css/main.1b7b9f6f.chunk.css",
-    "static/js/main.a768ca3b.chunk.js"
+    "static/js/main.cda0388f.chunk.js"
   ]
 }
