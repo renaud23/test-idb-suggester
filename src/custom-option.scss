@@ -1,0 +1,108 @@
+.renaud-suggestion-option {
+  text-align: left;
+  color: black;
+  font-size: 12px;
+
+  &.active {
+    background-color: goldenrod;
+  }
+  &.selected {
+    background-color: paleturquoise;
+
+    &.active {
+      background-color: gold;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  .custom-cog-option {
+    padding: 1px 0;
+
+    .com {
+      background-color: seagreen;
+      color: snow;
+      border-radius: 4px;
+      padding: 1px 3px;
+      font-size: 12px;
+      font-family: monospace;
+    }
+
+    .libelle {
+      padding-left: 2px;
+    }
+  }
+
+  .custom-naf-option {
+    .code {
+      background-color: darkblue;
+      &.section {
+        background-color: darkred;
+      }
+      &.division {
+        background-color: darkcyan;
+      }
+      &.groupe {
+        background-color: darkorange;
+      }
+      &.classe {
+        background-color: darkorchid;
+      }
+      color: snow;
+      border-radius: 4px;
+      padding: 1px 3px;
+      font-size: 12px;
+      font-family: monospace;
+    }
+    .libelle {
+      padding-left: 2px;
+    }
+  }
+}
+
+.renaud-suggester-container {
+  text-align: left;
+  font-size: 14px;
+
+  &.focused {
+  }
+  &.unfocused {
+  }
+
+  .renaud-suggester {
+    .renaud-suggester-panel-container {
+      &.display {
+      }
+      &.hide {
+      }
+
+      .renaud-suggester-panel {
+      }
+    }
+
+    .renaud-suggester-input-container {
+      &.focused {
+      }
+
+      .renaud-suggester-input {
+        background-color: transparent;        
+      }
+
+      .renaud-suggester-input-layer {
+      }
+
+      .renaud-suggester-button-delete {
+        &:hover {
+        }
+
+        &:focus {
+        }
+      }
+    }
+
+    .renaud-suggestion-option {
+    }
+  }
+}

@@ -1,0 +1,96 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/** */
+.store-manager {
+  background-color: gainsboro;
+  margin: 2px 2px;
+
+  .store-manager-title {
+  }
+  .store-status {
+    .store-status-info {
+      .label {
+      }
+      .value {
+      }
+    }
+  }
+
+  .store-manager-actions-container {
+    height: 35px;
+  }
+
+  .store-manager-separator {
+  }
+
+  .store-button {
+    &:hover {
+    }
+    &:active,
+    &:focus {
+    }
+    &:focus {
+    }
+
+    &.disabled {
+      &:hover,
+      &:active,
+      &:focus {
+      }
+    }
+  }
+}
+
+/* */
+.bulk-insert-progress {
+  .progress {
+  }
+  .status {
+    font-size: 16px;
+    font-family: "Lucida Console", Monaco, monospace;
+    width: 100%;
+    color: darkmagenta;
+    left: 1px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
