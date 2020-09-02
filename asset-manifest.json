@@ -5,18 +5,18 @@
     "main.js.map": "/test-idb-suggester/static/js/main.9a86d694.chunk.js.map",
     "runtime-main.js": "/test-idb-suggester/static/js/runtime-main.46e8dd7b.js",
     "runtime-main.js.map": "/test-idb-suggester/static/js/runtime-main.46e8dd7b.js.map",
-    "static/js/2.cc58b587.chunk.js": "/test-idb-suggester/static/js/2.cc58b587.chunk.js",
-    "static/js/2.cc58b587.chunk.js.map": "/test-idb-suggester/static/js/2.cc58b587.chunk.js.map",
+    "static/js/2.d465f7f1.chunk.js": "/test-idb-suggester/static/js/2.d465f7f1.chunk.js",
+    "static/js/2.d465f7f1.chunk.js.map": "/test-idb-suggester/static/js/2.d465f7f1.chunk.js.map",
     "index.html": "/test-idb-suggester/index.html",
-    "precache-manifest.6afc514c68fb807bc7f95e7bbd2ad8b0.js": "/test-idb-suggester/precache-manifest.6afc514c68fb807bc7f95e7bbd2ad8b0.js",
+    "precache-manifest.b4a325db960aec8cf1c8b9fa89c049b6.js": "/test-idb-suggester/precache-manifest.b4a325db960aec8cf1c8b9fa89c049b6.js",
     "service-worker.js": "/test-idb-suggester/service-worker.js",
     "static/css/main.1b7b9f6f.chunk.css.map": "/test-idb-suggester/static/css/main.1b7b9f6f.chunk.css.map",
-    "static/js/2.cc58b587.chunk.js.LICENSE.txt": "/test-idb-suggester/static/js/2.cc58b587.chunk.js.LICENSE.txt",
+    "static/js/2.d465f7f1.chunk.js.LICENSE.txt": "/test-idb-suggester/static/js/2.d465f7f1.chunk.js.LICENSE.txt",
     "static/media/logo.svg": "/test-idb-suggester/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.46e8dd7b.js",
-    "static/js/2.cc58b587.chunk.js",
+    "static/js/2.d465f7f1.chunk.js",
     "static/css/main.1b7b9f6f.chunk.css",
     "static/js/main.9a86d694.chunk.js"
   ]
