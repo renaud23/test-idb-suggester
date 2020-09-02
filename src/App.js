@@ -42,24 +42,29 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <h1>Test in CRA app. French communes.</h1>
         <img src={logo} className="App-logo" alt="logo" />
 
         <div style={{ width: "250px" }}>
-          <StoreManager
-            name={COG_IDB_NAME}
-            version={1}
-            fields={COG_FIELDS}
-            fetch={fetchCommunes}
-          />
-          <Suggester
-            store={store}
-            placeHolder="Rechercher dans le COG."
-            optionComponent={CustomCOGOption}
-            displayPath="libelle"
-            onSelect={function (item) {
-              console.log("onSelect", item);
-            }}
-          />
+          {
+            <StoreManager
+              name={COG_IDB_NAME}
+              version={1}
+              fields={COG_FIELDS}
+              fetch={fetchCommunes}
+            />
+          }
+          {
+            <Suggester
+              store={store}
+              placeHolder="Rechercher dans le COG."
+              optionComponent={CustomCOGOption}
+              displayPath="libelle"
+              onSelect={function (item) {
+                console.log("onSelect", item);
+              }}
+            />
+          }
         </div>
         <a
           className="App-link"

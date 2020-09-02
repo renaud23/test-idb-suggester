@@ -1,19 +1,19 @@
 {
   "name": "test-idb-suggester",
   "version": "0.1.0",
-  "license": "MIT",
+  "license": "MIT", 
   "homepage": "https://renaud23.github.io/test-idb-suggester/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
-    "idb-suggester": "^0.2.4",
+    "idb-suggester": "0.2.11",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.3"
   },
   "scripts": {
-    "install-suggester": "npm install C:/Users/kqhlz2/Documents/workspace/idb-suggester/idb-suggester-0.2.3.tgz",
+    "install-suggester": "npm install C:/Users/kqhlz2/Documents/workspace/idb-suggester/idb-suggester-0.2.8.tgz",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
