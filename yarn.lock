@@ -5472,10 +5472,10 @@ icss-utils@^4.0.0, icss-utils@^4.1.1:
   dependencies:
     postcss "^7.0.14"
 
-idb-suggester@0.2.21:
-  version "0.2.21"
-  resolved "https://registry.yarnpkg.com/idb-suggester/-/idb-suggester-0.2.21.tgz#1c4a22b38d6504e38f1d0dc0ec1a4c0e1c6bcd0b"
-  integrity sha512-tfe9h/m55gaR8Royr6N82jivy8EjQxon4gyc7vLekDNcWdZng2K15hYOcEnJn+jhU2uQ9Q8xInWUU/bpRZfzbg==
+idb-suggester@0.2.23:
+  version "0.2.23"
+  resolved "https://registry.yarnpkg.com/idb-suggester/-/idb-suggester-0.2.23.tgz#86ef23556479e3dfd317d703ef00db49c6916e69"
+  integrity sha512-dQNtG93rykF5FSy6iTSEaDhrllRvTNLtxzAf218yJfBPuEufT2zh1lur/r2x6ISrAQlUcBlzsgPlR0K57T/Q6A==
   dependencies:
     "@testing-library/jest-dom" "^4.2.4"
     "@testing-library/react" "^9.3.2"

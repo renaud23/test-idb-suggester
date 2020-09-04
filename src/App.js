@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import logo from "./logo.svg";
 import { createStore, Suggester, StoreManager } from "idb-suggester";
 import "./App.scss";
+import "idb-suggester/themes/sass/pinky-theme.scss";
 import "./custom-option.scss";
 
 const COG_IDB_NAME = "TEST/COG";
@@ -60,8 +61,8 @@ function App() {
               placeHolder="Rechercher dans le COG."
               optionComponent={CustomCOGOption}
               displayPath="libelle"
-              onSelect={function (item) {
-                console.log("onSelect", item);
+              onSelect={function (item, options, query) {
+                console.log("onSelect", item, options, query);
               }}
             />
           }
