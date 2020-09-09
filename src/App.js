@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
+import classnames from "classnames";
 import logo from "./logo.svg";
-import { createStore, Suggester, StoreManager } from "idb-suggester";
+import { useStoreIndex, Suggester, StoreManager } from "idb-suggester";
 import "./App.scss";
-import "idb-suggester/themes/sass/pinky-theme.scss";
+import "idb-suggester/themes/css/default-theme.css";
 import "./custom-option.scss";
 
 const COG_IDB_NAME = "TEST/COG";
@@ -28,45 +29,58 @@ async function fetchCommunes() {
   });
 }
 
-function App() {
-  const [store, setStore] = useState(undefined);
-  useEffect(function () {
-    async function init() {
-      setStore(await createStore(COG_IDB_NAME, 1, COG_FIELDS));
-    }
+function Echoes({ echoes }) {
+  return (
+    <div className="echoes">
+      {echoes.map(function (doc, i) {
+        const { com, libelle } = doc;
+        return (
+          <div className={classnames("echo", { pair: i % 2 === 0 })} key={i}>
+            <span className="code">{com}</span>
+            <span className="libelle">{libelle}</span>
+          </div>
+        );
+      })}
+    </div>
+  );
+}
 
-    init();
-  }, []);
+function App() {
+  const [echoes, setEchoes] = useState([]);
+  const store = useStoreIndex(COG_IDB_NAME, 1, COG_FIELDS);
+
   if (!store) {
-    return null;
+    return <div>Loading...</div>;
   }
   return (
     <div className="App">
       <header className="App-header">
         <h1>Test in CRA app. French communes.</h1>
-        <img src={logo} className="App-logo" alt="logo" />
-
         <div style={{ width: "250px" }}>
-          {
-            <StoreManager
-              name={COG_IDB_NAME}
-              version={1}
-              fields={COG_FIELDS}
-              fetch={fetchCommunes}
-            />
-          }
-          {
-            <Suggester
-              store={store}
-              placeHolder="Rechercher dans le COG."
-              optionComponent={CustomCOGOption}
-              displayPath="libelle"
-              onSelect={function (item, options, query) {
-                console.log("onSelect", item, options, query);
-              }}
-            />
-          }
+          <Suggester
+            store={store}
+            placeHolder="Rechercher dans le COG."
+            optionComponent={CustomCOGOption}
+            displayPath="libelle"
+            onSelect={function (item, options, query) {
+              console.log("onSelect", item, options, query);
+            }}
+            onChange={function (q, suggestions) {
+              setEchoes(suggestions);
+            }}
+          />
         </div>
+        <img src={logo} className="App-logo" alt="logo" />
+        <Echoes echoes={echoes} />
+        <div className="store-pane">
+          <StoreManager
+            name={COG_IDB_NAME}
+            version={1}
+            fields={COG_FIELDS}
+            fetch={fetchCommunes}
+          />
+        </div>
+
         <a
           className="App-link"
           href="https://reactjs.org"

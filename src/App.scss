@@ -1,5 +1,38 @@
 .App {
   text-align: center;
+  .store-pane {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+  }
+
+  .echoes {
+    width: 1024px;
+    .echo {
+      height: 35px;
+      text-align: left;
+      width: 100%;
+      background-color: midnightblue;
+      color: snow;
+      border-bottom: dotted gray 1px;
+      padding: 2px 2px;
+      &.pair {
+        background-color: lightblue;
+        color: black;
+      }
+      .code {
+        padding: 0 6px;
+        display: inline-block;
+        background-color: olive;
+        border-radius: 4px;
+        color: magenta;
+        line-height: 35px;
+      }
+      .libelle {
+        padding-left: 15px;
+      }
+    }
+  }
 }
 
 .App-logo {
